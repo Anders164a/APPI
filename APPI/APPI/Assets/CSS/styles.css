@@ -1,0 +1,13 @@
+﻿.logodivider {
+	background-color: #940000;
+}
+
+.attendance {
+	border-color: black;
+	border-radius: 50;
+	border-width: 20px;
+}
+
+Label {
+	color: black;
+}

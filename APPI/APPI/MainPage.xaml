@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="APPI.MainPage">
+    <ContentPage.Resources>
+        <StyleSheet Source="Assets/CSS/styles.css"/>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout>
+            <Image Source="HJV" HeightRequest="75" Margin="0, 12.5, 0, 12.5"/>
+            <BoxView Margin="25, 0, 25, 0" HeightRequest="2" StyleClass="logodivider"></BoxView>
+            <Grid Margin="25, 0, 25, 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+            
+                <Button Text="Log out" TextTransform="None" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Clicked="logout"/>
+                <Button Text="Sort" HorizontalOptions="Center" TextTransform="None" Grid.Row="0" Grid.Column="1">
+                </Button>
+            </Grid>
+            <yummy:PancakeView BackgroundColor="#940000" Margin="25, 10, 25, 0" Padding="4, 0, 0, 0" CornerRadius="5">
+                <yummy:PancakeView BackgroundColor="WhiteSmoke" Padding="5 ,2, 5, 5">
+                    <StackLayout>
+                        <Grid>
+                            <Label Text="Titel" FontSize="Medium"></Label>
+                            <yummy:PancakeView CornerRadius="50" Padding="2, 0" HorizontalOptions="End" Border="{yummy:BorderMarkup Color=Black, Thickness='1'}">
+                                <Label Text="0" FontSize="Medium" HorizontalOptions="End" Padding="1"/>
+                            </yummy:PancakeView>
+                        </Grid>
+                        <Label Text="Dato" FontSize="Small"></Label>
+                        <Label Text="Lokation" FontSize="Small"></Label>
+                        <Label Text="Ansvarlig" HorizontalTextAlignment="End" FontAttributes="Italic" FontSize="Small"></Label>
+                    </StackLayout>
+                </yummy:PancakeView>
+            </yummy:PancakeView>
+        
+        
+        
+        
+            <yummy:PancakeView BackgroundColor="#940000" Margin="25, 10, 25, 0" Padding="4, 0, 0, 0" CornerRadius="5">
+                <yummy:PancakeView BackgroundColor="WhiteSmoke" Padding="5 ,2, 5, 5">
+                    <StackLayout>
+                        <Grid>
+                            <Label Text="CQB - Bykamp" FontSize="Medium"></Label>
+                            <yummy:PancakeView CornerRadius="50" Padding="2, 0" HorizontalOptions="End" Margin="0, 0, 5, 0" Border="{yummy:BorderMarkup Color=Black, Thickness='1'}">
+                                <Label Text="25" FontSize="Medium" HorizontalOptions="End" Padding="1"/>
+                            </yummy:PancakeView>
+                        </Grid>
+                        <Label Text="Periode: 22. januar 2022 kl. 18.00 - 24. Januar 2022 kl. 16.00" FontSize="Small"></Label>
+                        <Label Text="Containerby - Vibelundvej, 70, ODENSE V" FontSize="Small"></Label>
+                        <Label Text="KC. Jens Anker Børge, HVKNFY" HorizontalTextAlignment="End" FontAttributes="Italic" FontSize="Small"></Label>
+                    </StackLayout>
+                </yummy:PancakeView>
+            </yummy:PancakeView>
+
+            <yummy:PancakeView BackgroundColor="#940000" Margin="25, 10, 25, 0" Padding="4, 0, 0, 0" CornerRadius="5">
+                <yummy:PancakeView BackgroundColor="WhiteSmoke" Padding="5 ,2, 5, 5">
+                    <StackLayout>
+                        <Grid>
+                            <Label Text="Titel" FontSize="Medium"></Label>
+                            <yummy:PancakeView CornerRadius="50" Padding="2, 0" HorizontalOptions="End" Border="{yummy:BorderMarkup Color=Black, Thickness='1'}">
+                                <Label Text="0" FontSize="Medium" HorizontalOptions="End" Padding="1"/>
+                            </yummy:PancakeView>
+                        </Grid>
+                        <Label Text="Dato" FontSize="Small"></Label>
+                        <Label Text="Lokation" FontSize="Small"></Label>
+                        <Label Text="Ansvarlig" HorizontalTextAlignment="End" FontAttributes="Italic" FontSize="Small"></Label>
+                    </StackLayout>
+                </yummy:PancakeView>
+            </yummy:PancakeView>
+
+            <yummy:PancakeView BackgroundColor="#940000" Margin="25, 10, 25, 0" Padding="4, 0, 0, 0" CornerRadius="5">
+                <yummy:PancakeView BackgroundColor="WhiteSmoke" Padding="5 ,2, 5, 5">
+                    <StackLayout>
+                        <Grid>
+                            <Label Text="Titel" FontSize="Medium"></Label>
+                            <yummy:PancakeView CornerRadius="50" Padding="2, 0" HorizontalOptions="End" Border="{yummy:BorderMarkup Color=Black, Thickness='1'}">
+                                <Label Text="0" FontSize="Medium" HorizontalOptions="End" Padding="1"/>
+                            </yummy:PancakeView>
+                        </Grid>
+                        <Label Text="Dato" FontSize="Small"></Label>
+                        <Label Text="Lokation" FontSize="Small"></Label>
+                        <Label Text="Ansvarlig" HorizontalTextAlignment="End" FontAttributes="Italic" FontSize="Small"></Label>
+                    </StackLayout>
+                </yummy:PancakeView>
+            </yummy:PancakeView>
+
+            <yummy:PancakeView BackgroundColor="#940000" Margin="25, 10, 25, 0" Padding="4, 0, 0, 0" CornerRadius="5">
+                <yummy:PancakeView BackgroundColor="WhiteSmoke" Padding="5 ,2, 5, 5">
+                    <StackLayout>
+                        <Grid>
+                            <Label Text="Titel" FontSize="Medium"></Label>
+                            <yummy:PancakeView CornerRadius="50" Padding="2, 0" HorizontalOptions="End" Border="{yummy:BorderMarkup Color=Black, Thickness='1'}">
+                                <Label Text="0" FontSize="Medium" HorizontalOptions="End" Padding="1"/>
+                            </yummy:PancakeView>
+                        </Grid>
+                        <Label Text="Dato" FontSize="Small"></Label>
+                        <Label Text="Lokation" FontSize="Small"></Label>
+                        <Label Text="Ansvarlig" HorizontalTextAlignment="End" FontAttributes="Italic" FontSize="Small"></Label>
+                    </StackLayout>
+                </yummy:PancakeView>
+            </yummy:PancakeView>
+
+            <yummy:PancakeView BackgroundColor="#940000" Margin="25, 10, 25, 0" Padding="4, 0, 0, 0" CornerRadius="5">
+                <yummy:PancakeView BackgroundColor="WhiteSmoke" Padding="5 ,2, 5, 5">
+                    <StackLayout>
+                        <Grid>
+                            <Label Text="Titel" FontSize="Medium"></Label>
+                            <yummy:PancakeView CornerRadius="50" Padding="2, 0" HorizontalOptions="End" Border="{yummy:BorderMarkup Color=Black, Thickness='1'}">
+                                <Label Text="0" FontSize="Medium" HorizontalOptions="End" Padding="1"/>
+                            </yummy:PancakeView>
+                        </Grid>
+                        <Label Text="Dato" FontSize="Small"></Label>
+                        <Label Text="Lokation" FontSize="Small"></Label>
+                        <Label Text="Ansvarlig" HorizontalTextAlignment="End" FontAttributes="Italic" FontSize="Small"></Label>
+                    </StackLayout>
+                </yummy:PancakeView>
+            </yummy:PancakeView>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
