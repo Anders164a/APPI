@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Essentials;
 using Xamarin.Forms.Xaml;
 
 namespace APPI
@@ -17,6 +18,17 @@ namespace APPI
         public Home()
         {
             InitializeComponent();
+
+            get_geolocation();
+        }
+
+        private async void get_geolocation()
+        {
+            var request = new GeolocationRequest(GeolocationAccuracy.Best);
+            var location = await Geolocation.GetLocationAsync(request);
+
+            w.Text = location.Latitude.ToString();
+            f.Text = location.Longitude.ToString();
         }
 
         private void login(object sender, EventArgs e)

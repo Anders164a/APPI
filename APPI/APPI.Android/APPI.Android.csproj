@@ -59,16 +59,13 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MySql.Data">
-      <Version>8.0.27</Version>
-    </PackageReference>
-    <PackageReference Include="MySqlConnector">
-      <Version>2.1.2</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2291" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
     <PackageReference Include="Xamarin.Forms.PancakeView">
       <Version>2.3.0.759</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.MySql.Data">
+      <Version>1.0.1</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +95,10 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\APPI_DB\APPI_DB.csproj">
+      <Project>{28197edb-f53a-493e-ad24-c482c0493576}</Project>
+      <Name>APPI_DB</Name>
+    </ProjectReference>
     <ProjectReference Include="..\APPI\APPI.csproj">
       <Project>{ABBD5D17-8D51-4059-9B1D-5D93ED0A39F9}</Project>
       <Name>APPI</Name>

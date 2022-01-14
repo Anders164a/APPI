@@ -29,6 +29,10 @@
                     <Button Text="Log ind" CornerRadius="10" TextTransform="None" HorizontalOptions="Center" Clicked="login"/>
                 </StackLayout>
             </Grid>
+            <StackLayout Grid.Row="5" Grid.Column="0">
+                <Label x:Name="w"></Label>
+                <Label x:Name="f"></Label>
+            </StackLayout>
         </StackLayout>
     </ScrollView>
 
