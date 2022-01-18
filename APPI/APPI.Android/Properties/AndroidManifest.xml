@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.appi" android:installLocation="auto">
-	<uses-sdk android:minSdkVersion="18" android:targetSdkVersion="31" />
+	<uses-sdk android:minSdkVersion="18" android:targetSdkVersion="25" />
 	<application android:label="APPI.Android" android:theme="@style/MainTheme"></application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.CALL_PHONE" />
@@ -8,4 +8,6 @@
 	<uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
 </manifest>

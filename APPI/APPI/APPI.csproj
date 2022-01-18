@@ -11,6 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+    <PackageReference Include="Xam.Plugin.Geolocator" Version="4.5.0.6" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2291" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
@@ -18,6 +20,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\APPI_DB\APPI_DB.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Activity.xaml.cs">
+      <DependentUpon>Activity.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>

@@ -13,28 +13,17 @@ namespace APPI
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Home : ContentPage
     {
-        private NavigationPage loginpage;
+        private NavigationPage navigtor;
 
         public Home()
         {
             InitializeComponent();
-
-            get_geolocation();
-        }
-
-        private async void get_geolocation()
-        {
-            var request = new GeolocationRequest(GeolocationAccuracy.Best);
-            var location = await Geolocation.GetLocationAsync(request);
-
-            w.Text = location.Latitude.ToString();
-            f.Text = location.Longitude.ToString();
         }
 
         private void login(object sender, EventArgs e)
         {
-            loginpage = new NavigationPage(new Login());
-            App.Current.MainPage = loginpage;
+            navigtor = new NavigationPage(new Login());
+            App.Current.MainPage = navigtor;
         }
     }
 }

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-             x:Class="APPI.MainPage">
+             x:Class="APPI.Activity">
     <ContentPage.Resources>
         <StyleSheet Source="Assets/CSS/styles.css"/>
     </ContentPage.Resources>
@@ -24,11 +24,7 @@
                 <Button Text="Sort" HorizontalOptions="Center" TextTransform="None" Grid.Row="0" Grid.Column="1">
                 </Button>
             </Grid>
-
             <yummy:PancakeView BackgroundColor="#940000" Margin="25, 10, 25, 0" Padding="4, 0, 0, 0" CornerRadius="5">
-                <yummy:PancakeView.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="activity"/>
-                </yummy:PancakeView.GestureRecognizers>
                 <yummy:PancakeView BackgroundColor="WhiteSmoke" Padding="5 ,2, 5, 5">
                     <StackLayout>
                         <Grid>
@@ -40,6 +36,17 @@
                         <Label Text="Periode: 22. januar 2022 kl. 18.00 - 24. Januar 2022 kl. 16.00" FontSize="Small"></Label>
                         <Label Text="Containerby - Vibelundvej, 70, ODENSE V" FontSize="Small"></Label>
                         <Label Text="255225, Jens Anker Børge, HVKNFY" HorizontalTextAlignment="End" FontAttributes="Italic" FontSize="Small"></Label>
+                    </StackLayout>
+                </yummy:PancakeView>
+            </yummy:PancakeView>
+
+            <yummy:PancakeView Margin="25, 10, 25, 0" Padding="4, 0, 0, 0">
+                <yummy:PancakeView Padding="5 ,2, 5, 5">
+                    <StackLayout>
+                        <Label TextColor="White" Text="FØ Placering:" FontSize="Medium"></Label>
+                        <Label TextColor="White" x:Name="placemark" FontSize="Small"></Label>
+                        <Label TextColor="White" Text="Ring til Ansvarlig" HorizontalOptions="Center" FontSize="Medium"></Label>
+                        <ImageButton Source="phone" BackgroundColor="Transparent" HeightRequest="50" HorizontalOptions="Center" Clicked="call_responsible"></ImageButton>
                     </StackLayout>
                 </yummy:PancakeView>
             </yummy:PancakeView>

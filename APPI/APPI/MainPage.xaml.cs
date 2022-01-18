@@ -16,6 +16,12 @@ namespace APPI
             InitializeComponent();
         }
 
+        private void activity(object sender, EventArgs e)
+        {
+            navigator = new NavigationPage(new Activity());
+            App.Current.MainPage = navigator;
+        }
+
         private void logout(object sender, EventArgs e)
         {
             navigator = new NavigationPage(new Home());
