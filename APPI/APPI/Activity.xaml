@@ -44,7 +44,17 @@
                 <yummy:PancakeView Padding="5 ,2, 5, 5">
                     <StackLayout>
                         <Label TextColor="White" Text="FØ Placering:" FontSize="Medium"></Label>
-                        <Label TextColor="White" x:Name="placemark" FontSize="Small"></Label>
+                        <Label TextColor="Turquoise" x:Name="responsible_placemark" FontSize="Small"></Label>
+                        <Label TextColor="White" Text="Præcis Placering:" FontSize="Medium"></Label>
+                        <Label TextColor="Turquoise" x:Name="responsible_placemark_exactly" FontSize="Small"></Label>
+                        <Label TextColor="White" Text="Din Præcise Placering:" FontSize="Medium"></Label>
+                        <Label TextColor="Turquoise" x:Name="placemark_exactly" FontSize="Small"></Label>
+                    </StackLayout>
+                </yummy:PancakeView>
+            </yummy:PancakeView>
+            <yummy:PancakeView Margin="25, 10, 25, 20" Padding="4, 0, 0, 0" VerticalOptions="EndAndExpand">
+                <yummy:PancakeView Padding="5 ,2, 5, 5">
+                    <StackLayout>
                         <Label TextColor="White" Text="Ring til Ansvarlig" HorizontalOptions="Center" FontSize="Medium"></Label>
                         <ImageButton Source="phone" BackgroundColor="Transparent" HeightRequest="50" HorizontalOptions="Center" Clicked="call_responsible"></ImageButton>
                     </StackLayout>
