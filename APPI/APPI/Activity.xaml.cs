@@ -54,6 +54,7 @@ namespace APPI
             var Placemark = placemarks?.FirstOrDefault();
 
             responsible_placemark.Text = Placemark.Thoroughfare + ", " + Placemark.SubThoroughfare + ", " + Placemark.Locality;
+
             responsible_placemark_exactly.Text = activity_object.responsible_latitude + ", " + activity_object.responsible_longitude;
         }
 

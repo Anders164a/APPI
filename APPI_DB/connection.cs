@@ -18,8 +18,7 @@ namespace APPI_DB
 
         // Open the connection to the MySQL DB
         public async static void mysql_open_connection()
-        {
-            
+        {            
             try
             {
                 // set these values correctly for your database server
@@ -34,7 +33,6 @@ namespace APPI_DB
         // Open the connection to the local SQL DB
         public async static void mssql_open_connection()
         {
-
             try
             {
                 SqlConnection conn = new SqlConnection(mssql_conn_str);
