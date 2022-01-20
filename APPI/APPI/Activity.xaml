@@ -14,8 +14,8 @@
     <ScrollView>
         <StackLayout>
             <Image Source="HJV" HeightRequest="75" Margin="0, 12.5, 0, 12.5"/>
-            <BoxView Margin="25, 0, 25, 0" HeightRequest="2" StyleClass="logodivider"></BoxView>
-            <Grid Margin="25, 0, 25, 0">
+            <BoxView Margin="25, 0" HeightRequest="2" StyleClass="logodivider"></BoxView>
+            <Grid Margin="25, 0">
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
@@ -28,7 +28,7 @@
                 <Button Text="Sort" HorizontalOptions="Center" TextTransform="None" Grid.Row="0" Grid.Column="1">
                 </Button>
             </Grid>
-            <yummy:PancakeView BackgroundColor="#940000" Margin="25, 10, 25, 0" Padding="4, 0, 0, 0" CornerRadius="5">
+            <yummy:PancakeView BackgroundColor="#940000" StyleClass="pancake-margin, pl-1" CornerRadius="5">
                 <yummy:PancakeView BackgroundColor="WhiteSmoke" Padding="5 ,2, 5, 5">
                     <StackLayout>
                         <Grid>
@@ -44,8 +44,8 @@
                 </yummy:PancakeView>
             </yummy:PancakeView>
 
-            <yummy:PancakeView Margin="25, 10, 25, 0" Padding="4, 0, 0, 0">
-                <yummy:PancakeView Padding="5 ,2, 5, 5">
+            <yummy:PancakeView StyleClass="pancake-margin, pl-1">
+                <yummy:PancakeView Padding="5">
                     <StackLayout>
                         <Label TextColor="White" Text="{Binding Name, StringFormat='FØ Placering [{0}]:'}" FontSize="Medium"></Label>
                         <Label TextColor="Turquoise" x:Name="responsible_placemark" FontSize="Small"></Label>
@@ -56,8 +56,8 @@
                     </StackLayout>
                 </yummy:PancakeView>
             </yummy:PancakeView>
-            <yummy:PancakeView Margin="25, 10, 25, 20" Padding="4, 0, 0, 0" VerticalOptions="EndAndExpand">
-                <yummy:PancakeView Padding="5 ,2, 5, 5">
+            <yummy:PancakeView Margin="25, 10, 25, 20"  StyleClass="pl-1" VerticalOptions="EndAndExpand">
+                <yummy:PancakeView Padding="5">
                     <StackLayout>
                         <Label TextColor="White" Text="Ring til Ansvarlig" HorizontalOptions="Center" FontSize="Medium"></Label>
                         <ImageButton Source="phone" BackgroundColor="Transparent" HeightRequest="50" HorizontalOptions="Center" Clicked="call_responsible"></ImageButton>

@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
 using System.Data;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Essentials;
 using MySql.Data.MySqlClient;
 using APPI_DB;
-using System.IO;
-using SQLite;
 
 namespace APPI
 {
